@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    overflow-y: hidden;
+    background-image: url(../img/Fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 0 auto;
+    padding: 0 2%;
+}
+
+.logo{
+    width: auto;
+}
+
+.menu{
+    color: white;
+    padding-top: 40px;
+    width: 50%;
+}
+
+.menu a{
+    color: white;
+}

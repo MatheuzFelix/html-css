@@ -34,3 +34,60 @@ html,body{
 .menu a{
     color: white;
 }
+
+.witcher{
+    position: absolute;
+    right: 0;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    flex-direction: row;
+}
+
+.button a{
+    position: relative;
+    display: inline-block;
+    padding: 12px 56px;
+    margin: 10px 0;
+    color: wheat;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 5px;
+    border-radius: 40px;
+    overflow: hidden;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+.button a:nth-child(2)
+{   
+    right: -3%;
+    background: linear-gradient(90deg, #755bea, #ff72c0);
+}
+
+span{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    0%
+    {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%
+    {
+        width: 500px;
+        height: 500px;
+        opacity: 0.5;
+    }
+}

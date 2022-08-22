@@ -3,27 +3,50 @@
         <title>Durval o calvo</title>
         <link rel="stylesheet" href="./CSS/Style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
     </head>
     <body>
         <header>
             <div class="center">
-                <div class="logo"><img src="./img/Logo.png" alt="" width="280"></div><!--logo-->
+                <div class="logo"><img src="./img/Logo.png" width="280"></div><!--logo-->
                 <div class="menu">
                     <a href="#">Home</a>
                     <tr>-</tr>
-                    <a href="#">The Forest</a>
+                    <a href="#">Jogos</a>
                     <tr>-</tr>
-                    <a href="#">Stardew Valey</a>
+                    <a href="#">Progresso</a>
                     <tr>-</tr>
                     <a href="#">Criticas</a>
+                    <tr>-</tr>
+                    <a href="#">Recados</a>
                 </div><!--menu-->
+                <div class="witcher"><img src="./img/witcher icon.png" width="150"></div>
             </div><!--center-->
         </header>
         <section class="sobre">
             <div class="extrax">
-
             </div><!--extrax-->
         </section>
+        <div class="button">
+            <a href="#">Sim</a>
+            <a href="#">Não</a>
+            <script type= text/javascript>
+                const buttons = document.querySelectorAll('a');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', function(e) {
+                        let x =e.clientX - e.target.offsetLeft;
+                        let y =e.clientY - e.target.offsetTop;
+
+                        let ripples = document.createElement('span');
+                        ripples.style.left = x + 'px';
+                        ripples.style.top = y + 'px';
+                        this.appendChild(ripples);
+
+                        setTimeout(() => {
+                            ripples.remove()
+                        },1000);
+                    })
+                })
+            </script>
+        </div>
     </body>
 </html>
